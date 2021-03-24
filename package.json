@@ -2,7 +2,7 @@
   "name": "deep-thoughts",
   "version": "1.0.0",
   "description": "A social media application where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
