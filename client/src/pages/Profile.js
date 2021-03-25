@@ -8,6 +8,7 @@ import Auth from '../utils/auth';
 import { Redirect, useParams } from 'react-router-dom';
 import { ADD_FRIEND } from '../utils/mutations';
 import { useQuery, useMutation } from '@apollo/react-hooks';
+import ThoughtForm from '../components/ThoughtForm';
 
 const Profile = () => {
   const { username: userParam } = useParams();
@@ -71,6 +72,7 @@ const Profile = () => {
           />
         </div>
       </div>
+      <div className="mb-3">{!userParam && <ThoughtForm />}</div>
     </div>
   );
 };
